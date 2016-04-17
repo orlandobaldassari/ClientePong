@@ -31,28 +31,21 @@ class Player implements GameStateController {
     private int pontuacaoA = 0;
     private int pontuacaoB = 0;
     
-    //socket
-    //porta do cliente
-    int porta       = 5550;
-    //ip e porta do servidor
-    String serverip = "10.3.5.181";
-    int serverport  = 5554;
-    //id do player para controle (player1 e player2)
-    int playerID    = 1;
-    ServerSocket socketReceive = null;
     
-    //tela
+    int porta       = 5550;
+    String serverip = "192.168.0.104";
+    int serverport  = 5554;
+    int playerID    = 2;
+    ServerSocket socketReceive = null;
     private int largura;
     private int altura;
     
-    //Variáveis utilizadas para os Sprites
     private Sprite figuraBola;
     private Sprite barra1;
     private Sprite barra2;
     private Sprite figuraBackground;
     
     
-    //Inicialização das Classes do Game
     Background background = new Background();
     Bola bola1  = new Bola();
     Barra barraA = new Barra();
