@@ -19,7 +19,7 @@ import javaPlay.GameEngine;
 import javaPlay.GameStateController;
 import javaPlay.Keyboard;
 import javaPlay.Sprite;
-import lib.ReadFile;
+
 
 class Player implements GameStateController {
 
