@@ -20,7 +20,6 @@ import javaPlay.GameStateController;
 import javaPlay.Keyboard;
 import javaPlay.Sprite;
 
-//teste de comunicação github
 
 class Player implements GameStateController {
 
@@ -204,7 +203,7 @@ class Player implements GameStateController {
         });
         sendThread.start();
     }
-    //Abre um socket e faz uma requisicao
+    //Começa um socket 
     private void sendARequest(Map<String, Object> request, String IP, int PORT){
         try(Socket s = new Socket (IP, PORT)) {
             try (ObjectOutputStream oos = new ObjectOutputStream(s.getOutputStream())) {
