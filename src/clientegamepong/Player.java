@@ -36,7 +36,7 @@ class Player implements GameStateController {
     int porta       = 5550;
     String serverip = "192.168.0.104";
     int serverport  = 5554;
-    int playerID    = 2;
+    int playerID    = 1;
     ServerSocket socketReceive = null;
     private int largura;
     private int altura;
